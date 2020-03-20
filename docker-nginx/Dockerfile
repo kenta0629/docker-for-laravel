@@ -1,6 +1,5 @@
-FROM nginx:1.11
+FROM nginx:latest
 RUN apt-get update && apt-get install -y \
-    vim \
     unzip \
     zip \
     git
