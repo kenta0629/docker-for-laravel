@@ -1,5 +1,5 @@
 # FROM mysql:latest
-FROM mysql:8.0.19
+FROM mysql:8-debian
 RUN apt-get update && apt-get install -y \
     vim \
     unzip \

@@ -4,7 +4,7 @@ services:
     web:
         build: ./docker-nginx
         ports:
-            - 80:80
+            - 8889:80
         depends_on:
             - app
         volumes:
@@ -23,7 +23,7 @@ services:
     db:
         build: ./docker-mysql
         ports:
-            - 3306:3306
+            - 3309:3306
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: education
+            MYSQL_DATABASE: license
